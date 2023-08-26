@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #252839;
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span {
+    color: #fff;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 3em;
+
+    display: block;
+    width: 12ch;
+    white-space: nowrap;
+    overflow: hidden;
+
+    animation: typing 2s steps(12), parpadeo .5s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+}
+
+@keyframes parpadeo {
+    50% { border-color: transparent }
+}
